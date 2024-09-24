@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CitySwoon</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="dist/styles.css" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <header>
+    </header>
+    <main class="container mx-auto px-12 py-12">
+        <!-- Headline Section -->
+        <section>
+            <div class="flex flex-col mb-[1rem] md:flex-row  md:mb-[0rem] ">
+                <div class="w-full md:w-1/2 ">
+                    <h1 class="text-4xl font-bold mb-5">Speed Dating Near Me:</h1>
+                    <p id="headerCitiesSmaller" class="text-lg font-bold text-black mb-4 ">
+                        Displaying all cities with events in Australia
+                    </p>
+                </div>
+                <div class="">
+                    <!-- Enhanced Select Dropdown -->
+                    <select
+                        class="min-w-[256px] text-xl  leading-none text-black py-3 px-5 bg-white rounded border border-gray-200 box-border clear-both cursor-pointer block float-left font-inherit  font-normal h-[49px] leading-[40px] outline-none pl-[18px] pr-[30px] relative">
+                        <option class="bg-white text-black">Select your city</option>
+                        <option class="bg-white text-black">Sydney</option>
+                        <option class="bg-white text-black">Melbourne</option>
+                        <option class="bg-white text-black">Brisbane</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- City Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+                <!-- first -->
+                <div class="card">
+                    <div class="card-header">
+                      <img src="assets/img/citySydney.webp" alt="Sydney" class="card-img">
+                    </div>
+                    <div class="card-body">
+                      <h2 class="card-title">Sydney</h2>
+                      <p class="card-description">There are hundreds and thousands of singles in beautiful Sydney! Speed date (virtually or in person) and be algorithmically matched to the best!</p>
+                      <a href="event.html" class="card-button">Show Events</a>
+                    </div>
+                  </div>
+                <!-- second -->
+                <div class="bg-white  mb-7 rounded-[23px] shadow-[20px_20px_20px_rgba(0,0,0,0.1)]">
+                    <div class="relative min-h-[222px]">
+                        <img src="assets/img/cityMelbourne.webp" alt="Sydney"
+                            class="h-[222px] w-full  object-cover object-top">
+                    </div>
+                    <div class="p-[1.4375rem]">
+                        <h2  class="whitespace-normal mb-[2px] mt-[2px] max-h-[3.6rem] overflow-hidden font-bold text-[1.375rem] leading-[1.3]">
+                            Melbourne</h2>
+                        <p class="text-[1rem] mb-8 h-100px ">You live in the eclectic cultural hub that is Melbourne.
+                            Meet
+                            local singles, matched to you with our mega successful patented algorithm!</p>
+                        <a href="event.html"
+                            class="font-[700] text-[1.125rem] p-[.563rem_1rem] bg-[#4b48e3] text-white rounded-[10px] border-2 border-[#4b48e3] transition duration-500 leading-[1] w-full min-w-[190px] hover:bg-white hover:text-[#4b48e3] hover:border-[#4b48e3] focus:outline-none active:outline-none text-center inline-block">
+                            Show Events </a>
+                    </div>
+                </div>
+                <!-- Third -->
+                <div class="bg-white  mb-7 rounded-[23px] shadow-[20px_20px_20px_rgba(0,0,0,0.1)]">
+                    <div class="relative min-h-[222px]">
+                        <img src="assets/img/cityBrisbane.webp" alt="Sydney"
+                            class="h-[222px] w-full  object-cover object-top">
+                    </div>
+                    <div class="p-[1.4375rem]">
+                        <h2
+                            class="whitespace-normal mb-[2px] mt-[2px] max-h-[3.6rem] overflow-hidden font-bold text-[1.375rem] leading-[1.3]">
+                            Brisbane</h2>
+                        <p class="text-[1rem] mb-8 h-100px ">Sunny Brisbane! Check out the really fun singles events
+                            where
+                            you can date other people in your beautiful city, from home or in person!</p>
+                        <a href="event.html"
+                            class="font-[700] text-[1.125rem] p-[.563rem_1rem] bg-[#4b48e3] text-white rounded-[10px] border-2 border-[#4b48e3] transition duration-500 leading-[1] w-full min-w-[190px] hover:bg-white hover:text-[#4b48e3] hover:border-[#4b48e3] focus:outline-none active:outline-none text-center inline-block">
+                            Show Events </a>
+                    </div>
+                </div>
+                <!-- fourth -->
+                <div class="bg-white  mb-7 rounded-[23px] shadow-[20px_20px_20px_rgba(0,0,0,0.1)]">
+                    <div class="relative min-h-[222px]">
+                        <img src="assets/img/citySydney.webp" alt="Sydney"
+                            class="h-[222px] w-full  object-cover object-top">
+                    </div>
+                    <div class="p-[1.4375rem]">
+                        <h2
+                            class="whitespace-normal mb-[2px] mt-[2px] max-h-[3.6rem] overflow-hidden font-bold text-[1.375rem] leading-[1.3]">
+                            Adelaide</h2>
+                        <p class="text-[1rem] mb-8 h-100px ">Beautiful green Adelaide. This is the perfect time to meet
+                            someone amazing at our online and offline singles events where you are matched to your
+                            dates.
+                        </p>
+                        <a href="event.html"
+                            class="font-[700] text-[1.125rem] p-[.563rem_1rem] bg-[#4b48e3] text-white rounded-[10px] border-2 border-[#4b48e3] transition duration-500 leading-[1] w-full min-w-[190px] hover:bg-white hover:text-[#4b48e3] hover:border-[#4b48e3] focus:outline-none active:outline-none text-center inline-block">
+                            Show Events </a>
+                    </div>
+                </div>
+                <!-- fifth -->
+                <div class="bg-white  mb-7 rounded-[23px] shadow-[20px_20px_20px_rgba(0,0,0,0.1)]">
+                    <div class="relative min-h-[222px]">
+                        <img src="assets/img/cityMelbourne.webp" alt="Sydney"
+                            class="h-[222px] w-full  object-cover object-top">
+                    </div>
+                    <div class="p-[1.4375rem]">
+                        <h2
+                            class="whitespace-normal mb-[2px] mt-[2px] max-h-[3.6rem] overflow-hidden font-bold text-[1.375rem] leading-[1.3]">
+                            Perth</h2>
+                        <p class="text-[1rem] mb-8 h-100px ">Gorgeous Perth. Check out the really fun singles events
+                            where
+                            you can date other people in your beautiful city, in person or from home! </p>
+                        <a href="event.html"
+                            class="font-[700] text-[1.125rem] p-[.563rem_1rem] bg-[#4b48e3] text-white rounded-[10px] border-2 border-[#4b48e3] transition duration-500 leading-[1] w-full min-w-[190px] hover:bg-white hover:text-[#4b48e3] hover:border-[#4b48e3] focus:outline-none active:outline-none text-center inline-block">
+                            Show Events </a>
+                    </div>
+                </div>
+                <!-- Sixth -->
+                <div class="bg-white  mb-7 rounded-[23px] shadow-[20px_20px_20px_rgba(0,0,0,0.1)]">
+                    <div class="relative min-h-[222px]">
+                        <img src="assets/img/cityBrisbane.webp" alt="Sydney"
+                            class="h-[222px] w-full  object-cover object-top">
+                    </div>
+                    <div class="p-[1.4375rem]">
+                        <h2
+                            class="whitespace-normal mb-[2px] mt-[2px] max-h-[3.6rem] overflow-hidden font-bold text-[1.375rem] leading-[1.3]">
+                            Gold Coast</h2>
+                        <p class="text-[1rem] mb-8 h-100px ">Gorgeous Perth. Check out the really fun singles events
+                            where
+                            you can date other people in your beautiful city, in person or from home! </p>
+                        <a href="event.html"
+                            class="font-[700] text-[1.125rem] p-[.563rem_1rem] bg-[#4b48e3] text-white rounded-[10px] border-2 border-[#4b48e3] transition duration-500 leading-[1] w-full min-w-[190px] hover:bg-white hover:text-[#4b48e3] hover:border-[#4b48e3] focus:outline-none active:outline-none text-center inline-block">
+                            Show Events </a>
+                    </div>
+                </div>
+                <!-- sevent -->
+                <div class="bg-white  mb-7 rounded-[23px] shadow-[20px_20px_20px_rgba(0,0,0,0.1)]">
+                    <div class="relative min-h-[222px]">
+                        <img src="assets/img/cityCanberra.webp" alt="Sydney"
+                            class="h-[222px] w-full  object-cover object-top">
+                    </div>
+                    <div class="p-[1.4375rem]">
+                        <h2
+                            class="whitespace-normal mb-[2px] mt-[2px] max-h-[3.6rem] overflow-hidden font-bold text-[1.375rem] leading-[1.3]">
+                            Canberra</h2>
+                        <p class="text-[1rem] mb-8 h-100px ">Beautiful green Adelaide. This is the perfect time to meet
+                            someone amazing at our online and offline singles events where you are matched to your
+                            dates.
+                        </p>
+                        <a href="event.html"
+                            class="font-[700] text-[1.125rem] p-[.563rem_1rem] bg-[#4b48e3] text-white rounded-[10px] border-2 border-[#4b48e3] transition duration-500 leading-[1] w-full min-w-[190px] hover:bg-white hover:text-[#4b48e3] hover:border-[#4b48e3] focus:outline-none active:outline-none text-center inline-block">
+                            Show Events </a>
+                    </div>
+                </div>
+                <!-- eighth -->
+                <div class="bg-white  mb-7 rounded-[23px] shadow-[20px_20px_20px_rgba(0,0,0,0.1)]">
+                    <div class="relative min-h-[222px]">
+                        <img src="assets/img/cityNewcastle.webp" alt="Sydney"
+                            class="h-[222px] rounded-tl-[23px] rounded-tr-[23px] w-full  object-cover object-top">
+                    </div>
+                    <div class="p-[1.4375rem]">
+                        <h2
+                            class="whitespace-normal mb-[2px] mt-[2px] max-h-[3.6rem] overflow-hidden font-bold text-[1.375rem] leading-[1.3]">
+                            Newcastle</h2>
+                        <p class="text-[1rem] mb-8 h-100px ">Gorgeous Perth. Check out the really fun singles events
+                            where
+                            you can date other people in your beautiful city, in person or from home! </p>
+                        <a href="event.html"
+                            class="font-[700] text-[1.125rem] p-[.563rem_1rem] bg-[#4b48e3] text-white rounded-[10px] border-2 border-[#4b48e3] transition duration-500 leading-[1] w-full min-w-[190px] hover:bg-white hover:text-[#4b48e3] hover:border-[#4b48e3] focus:outline-none active:outline-none text-center inline-block">
+                            Show Events </a>
+                    </div>
+                </div>
+                <!-- nigth -->
+                <div class="bg-white  mb-7 rounded-[23px] shadow-[20px_20px_20px_rgba(0,0,0,0.1)]">
+                    <div class="relative min-h-[222px]">
+                        <img src="assets/img/cityHobart.webp" alt="Sydney"
+                            class="h-[222px] w-full rounded-tl-[23px] rounded-tr-[23px]  object-cover object-top">
+                    </div>
+                    <div class="p-[1.4375rem]">
+                        <h2
+                            class="whitespace-normal mb-[2px] mt-[2px] max-h-[3.6rem] overflow-hidden font-bold text-[1.375rem] leading-[1.3]">
+                            Hobart</h2>
+                        <p class="text-[1rem] mb-8 h-100px ">Gorgeous Perth. Check out the really fun singles events
+                            where
+                            you can date other people in your beautiful city, in person or from home! </p>
+                        <a href="event.html"
+                            class="font-[700] text-[1.125rem] p-[.563rem_1rem] bg-[#4b48e3] text-white rounded-[10px] border-2 border-[#4b48e3] transition duration-500 leading-[1] w-full min-w-[190px] hover:bg-white hover:text-[#4b48e3] hover:border-[#4b48e3] focus:outline-none active:outline-none text-center inline-block">
+                            Show Events </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
