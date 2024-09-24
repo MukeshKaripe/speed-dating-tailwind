@@ -2,7 +2,12 @@
 
 
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: [
+    "./**/*.{html,js}",
+    './src/**/*.{html,js,jsx,ts,tsx,css}', // Adjust paths as per your project structure
+    './components/**/*.{html,js,jsx,ts,tsx}',
+    './pages/**/*.{html,js,jsx,ts,tsx}', // For Next.js projects
+  ],
   theme: {
     extend: {
       fontSize: {
@@ -16,6 +21,18 @@ module.exports = {
         md: '768px',
       },
     },
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader', // Ensure this loader is included
+        ],
+      },
+    ],
   },
   plugins: [],
 };

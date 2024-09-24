@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.12 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -689,6 +689,10 @@ video {
   isolation: auto;
 }
 
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -742,6 +746,10 @@ video {
   margin-bottom: 3.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -750,12 +758,8 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-\[1\.375rem\] {
@@ -901,10 +905,6 @@ video {
   display: none;
 }
 
-.h-100px {
-  height: 100px;
-}
-
 .h-\[16px\] {
   height: 16px;
 }
@@ -919,6 +919,10 @@ video {
 
 .h-\[55px\] {
   height: 55px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-h-\[3\.6rem\] {
@@ -1175,6 +1179,10 @@ video {
 
 .list-outside {
   list-style-position: outside;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .appearance-none {
@@ -1828,6 +1836,10 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2142,6 +2154,10 @@ video {
   padding: 1rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .p-\[\.563rem_1rem\] {
   padding: .563rem 1rem;
 }
@@ -2182,6 +2198,10 @@ video {
 
 .pl-2 {
   padding-left: 0.5rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
 .pl-\[18px\] {
@@ -2250,6 +2270,11 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl {
@@ -2614,6 +2639,12 @@ video {
 .shadow-\[20px_20px_20px_rgba\(0\2c 0\2c 0\2c 0\.1\)\] {
   --tw-shadow: 20px 20px 20px rgba(0,0,0,0.1);
   --tw-shadow-colored: 20px 20px 20px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -3010,6 +3041,10 @@ video {
 
   .md\:w-\[1\/2\] {
     width: 1/2;
+  }
+
+  .md\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3 {
